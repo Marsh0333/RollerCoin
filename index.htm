@@ -178,10 +178,13 @@
     
   <script>
         
-        var select = document.getElementById('Coinclick-lvl');
-        var input = document.getElementById('CoinPoints');
-              select.onchange = function() {
-              input.value = select.value;
+        var e = document.getElementById("Coinclick-lvl");
+        var strUser = e.options[e.selectedIndex].text;
+        
+    /*var select = document.getElementById('Coinclick-lvl');
+        var input = document.getElementById('CoinPoints'); */
+              e.onchange = function() {
+              strUser.value = e.value;
               }
 
     </script>
