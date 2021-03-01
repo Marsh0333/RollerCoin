@@ -26,6 +26,7 @@
           <option value ="9"> 9 </option>
           <option value ="10"> 10 </option>
           </select></td>
+          <td><input type="text" name="lvl" id="lvl" onClick="checkPrice()"></td>
         </tr>
       <tr>
         <td>Token Blaster</td>
@@ -167,12 +168,11 @@
     
   <script>
         
-        function getSelectValue()
-        {
-            var selectedValue = document.getElementById("Coinclick-lvl").value;
-            console.log(selectedValue);
-        }
-        getSelectValue();
+        var select = document.getElementById('Coinclick-lvl');
+        var input = document.getElementById('lvl');
+              select.onchange = function() {
+              input.value = select.value;
+              }
 
     </script>
       
