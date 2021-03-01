@@ -165,19 +165,29 @@
       </tbody>
     </table>
     
-    <script>
-      
-                for(var i = 1; i < table.rows.length; i++)
-                {
-                    var e = document.getElementById('table').value
-                    {
-                         //rIndex = this.rowIndex;
-                         document.getElementById("Surfer-lvl").value = this.cells[0].innerHTML;
-                        
-                    };
-                }
-    
-         </script>  
+   <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document
+          .getElementById('Coinclick-lvl')
+          .addEventListener('input', handleSelect);
+        document.getElementById('thing').addEventListener('input', handleData);
+      });
+
+      function handleSelect(ev) {
+        let select = ev.target; //document.getElementById('flavours');
+        console.log(select.value);
+        let choices = [];
+        // for (let i = 0; i < select.selectedOptions.length; i++) {
+        //   choices.push(select.selectedOptions[i].value);
+        // }
+        choices = [].map.call(select.selectedOptions, (option) => option.value);
+        console.log(choices);
+      }
+      function handleData(ev) {
+        let theInput = ev.target;
+        console.log(theInput.value, typeof theInput.value);
+      }
+    </script>
       
         
     
