@@ -2,6 +2,17 @@
 <html>
   <head>
     <title>RollerCoin Calculator</title>
+    
+    
+    <script>
+        function CoinSelect(){
+        var d=document.getElementById("Coinclick-lvl");
+        var displaytext = d.options[d.SelectedIndex].text;
+        document.getElementById("CoinPoints").value=displaytext;
+        }
+        
+
+    </script>
   </head>
   <body>
     <table id="table" class="display" style="width:100%">
@@ -15,7 +26,7 @@
       <tbody>
         <tr>
         <td>Coinclick</td>
-        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onchange="Clicked();">
+        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onchange="CoinSelect();">
           <option value="600" selected> 1 </option>
           <option value ="640"> 2 </option>
           <option value ="680"> 3 </option>
@@ -27,7 +38,7 @@
           <option value ="840"> 9 </option>
           <option value ="880"> 10 </option>
           </select></td>
-          <td><input type="text" name="CoinPoints" id="CoinPoints" onClick="getElementByID('Coinclick-lvl').innerHTML"></td>
+          <td><input type="text" name="CoinPoints" id="CoinPoints"></td>
         </tr>
       <tr>
         <td>Token Blaster</td>
@@ -43,7 +54,7 @@
           <option value ="1200"> 9 </option>
           <option value ="2400"> 10 </option>
           </select></td>
-         <td><input type="text" name="BlasterPoints" id="BlasterPoints" onClick="getElementByID('Blaster-lvl').innerHTML"></td>
+         <td><input type="text" name="BlasterPoints" id="BlasterPoints"></td>
         </tr>
         <tr>
           <td>Flappy Rocket</td>
@@ -59,7 +70,7 @@
           <option value ="1140"> 9 </option>
           <option value ="1200"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlappyPoints" id="FlappyPoints" onClick="getElementByID('Flappy-lvl').innerHTML"></td>
+           <td><input type="text" name="FlappyPoints" id="FlappyPoints"></td>
         </tr>
         <tr>
         <td>Cryptonoid</td>
@@ -75,7 +86,7 @@
           <option value ="1568"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints" onClick="getElementByID('Cryptonoid-lvl').innerHTML"></td>
+           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints"></td>
         </tr>
         <tr>
         <td>Coin-Match</td>
@@ -91,7 +102,7 @@
           <option value ="1020"> 9 </option>
           <option value ="1035"> 10 </option>
           </select></td>
-           <td><input type="text" name="MatchPoints" id="MatchPoints" onClick="getElementByID('Match-lvl').innerHTML"></td>
+           <td><input type="text" name="MatchPoints" id="MatchPoints"></td>
         </tr>
         <tr>
         <td>Crypto Hamster</td>
@@ -107,7 +118,7 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptoPoints" id="CryptoPoints" onClick="getElementByID('Crypto-lvl').innerHTML"></td>
+           <td><input type="text" name="CryptoPoints" id="CryptoPoints"></td>
         </tr>
         <tr>
         <td>2048 Coins</td>
@@ -123,7 +134,7 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="2048Points" id="2048Points" onClick="getElementByID('2048-lvl').innerHTML"></td>
+           <td><input type="text" name="2048Points" id="2048Points"></td>
         </tr>
         <tr>
         <td>Coin-Flip</td>
@@ -139,7 +150,7 @@
           <option value ="1580"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlipPoints" id="FlipPoints" onClick="getElementByID('Flip-lvl').innerHTML"></td>
+           <td><input type="text" name="FlipPoints" id="FlipPoints"></td>
         </tr>
         <tr>
         <td>Dr. Hamster</td>
@@ -155,7 +166,7 @@
           <option value ="1404"> 9 </option>
           <option value ="1440"> 10 </option>
           </select></td>
-           <td><input type="text" name="DrPoints" id="DrPoints" onClick="getElementByID('Dr-lvl').innerHTML"></td>
+           <td><input type="text" name="DrPoints" id="DrPoints"></td>
         </tr>
         <tr>
         <td>Token Surfer</td>
@@ -171,22 +182,12 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="SurferPoints" id="SurferPoints" onClick="getElementByID('Surfer-lvl').innerHTML"></td>
+           <td><input type="text" name="SurferPoints" id="SurferPoints"></td>
         </tr>
       </tbody>
     </table>
     
-  <script>
-        
-        var select = document.getElementById('Coinclick-lvl');
-        var input = select.target.options[select.target.selectedIndex].text;
-        
-    /*var select = document.getElementById('Coinclick-lvl');
-        var input = document.getElementById('CoinPoints'); */
-  function Clicked() {
-      input.value = select.value;}
-
-    </script>
+  
       
         
     
