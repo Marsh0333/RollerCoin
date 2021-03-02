@@ -11,6 +11,59 @@
        document.getElementById("Coinclick-lvl").value;
       }
 
+      function BlasterSelect()
+      { 
+       document.getElementById("BlasterPoints").value=
+       document.getElementById("Blaster-lvl").value;
+      }
+      
+      function FlappySelect()
+      { 
+       document.getElementById("FlappyPoints").value=
+       document.getElementById("Flappy-lvl").value;
+      }
+      
+      function CryptonoidSelect()
+      { 
+       document.getElementById("CryptonoidPoints").value=
+       document.getElementById("Cryptonoid-lvl").value;
+      }
+      
+      function MatchSelect()
+      { 
+       document.getElementById("MatchPoints").value=
+       document.getElementById("Match-lvl").value;
+      }
+      
+      function CryptoSelect()
+      { 
+       document.getElementById("CryptoPoints").value=
+       document.getElementById("Crypto-lvl").value;
+      }
+      
+      function 2048Select()
+      { 
+       document.getElementById("2048Points").value=
+       document.getElementById("2048-lvl").value;
+      }
+      
+      function FlipSelect()
+      { 
+       document.getElementById("FlipPoints").value=
+       document.getElementById("Flip-lvl").value;
+      }
+      
+      function DrSelect()
+      { 
+       document.getElementById("DrPoints").value=
+       document.getElementById("Dr-lvl").value;
+      }
+      
+      function SurferSelect()
+      { 
+       document.getElementById("SurferPoints").value=
+       document.getElementById("Surfer-lvl").value;
+      }
     </script>
   </head>
   <body>
@@ -26,7 +79,7 @@
         <tr>
         <td>Coinclick</td>
         <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();">
-          <option value ="Points"> Lvls </option>
+          <option> Lvls </option>
           <option value ="600"> 1 </option>
           <option value ="640"> 2 </option>
           <option value ="680"> 3 </option>
@@ -42,8 +95,9 @@
         </tr>
       <tr>
         <td>Token Blaster</td>
-        <td><select size="1" id="Blaster-lvl" name="Blaster-lvl">
-          <option value="700" selected="selected"> 1 </option>
+        <td><select size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();">
+          <option> Lvls </option>
+          <option value="700"> 1 </option>
           <option value ="756"> 2 </option>
           <option value ="812"> 3 </option>
           <option value ="896"> 4 </option>
@@ -54,12 +108,13 @@
           <option value ="1200"> 9 </option>
           <option value ="2400"> 10 </option>
           </select></td>
-         <td><input type="text" name="BlasterPoints" id="BlasterPoints"></td>
+         <td><input type="text" name="BlasterPoints" id="BlasterPoints" value="Points"></td>
         </tr>
         <tr>
           <td>Flappy Rocket</td>
-          <td><select size="1" id="Flappy-lvl" name="Flappy-lvl">
-          <option value="704" selected="selected"> 1 </option>
+          <td><select size="1" id="Flappy-lvl" name="Flappy-lvl" onclick="FlappySelect();">
+          <option> Lvls </option>
+          <option value="704"> 1 </option>
           <option value ="768"> 2 </option>
           <option value ="819"> 3 </option>
           <option value ="882"> 4 </option>
@@ -70,12 +125,13 @@
           <option value ="1140"> 9 </option>
           <option value ="1200"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlappyPoints" id="FlappyPoints"></td>
+           <td><input type="text" name="FlappyPoints" id="FlappyPoints" value="Points"></td>
         </tr>
         <tr>
         <td>Cryptonoid</td>
-        <td><select size="1" id="Cryptonoid-lvl" name="Cryptonoid-lvl">
-          <option value="912" selected="selected"> 1 </option>
+        <td><select size="1" id="Cryptonoid-lvl" name="Cryptonoid-lvl" onclick="CryptonoidSelect();">
+          <option> Lvls </option>
+          <option value="912"> 1 </option>
           <option value ="936"> 2 </option>
           <option value ="984"> 3 </option>
           <option value ="1008"> 4 </option>
@@ -86,12 +142,13 @@
           <option value ="1568"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints"></td>
+           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints" value="Points"></td>
         </tr>
         <tr>
         <td>Coin-Match</td>
-        <td><select size="1" id="Match-lvl" name="Match-lvl">
-          <option value="720" selected="selected"> 1 </option>
+        <td><select size="1" id="Match-lvl" name="Match-lvl" onclick="MatchSelect();">
+          <option> Lvls </option>
+          <option value="720"> 1 </option>
           <option value ="793"> 2 </option>
           <option value ="806"> 3 </option>
           <option value ="819"> 4 </option>
@@ -102,12 +159,13 @@
           <option value ="1020"> 9 </option>
           <option value ="1035"> 10 </option>
           </select></td>
-           <td><input type="text" name="MatchPoints" id="MatchPoints"></td>
+           <td><input type="text" name="MatchPoints" id="MatchPoints" value="Points"></td>
         </tr>
         <tr>
         <td>Crypto Hamster</td>
-        <td><select size="1" id="Crypto-lvl" name="Crypto-lvl">
-          <option value="900" selected="selected"> 1 </option>
+        <td><select size="1" id="Crypto-lvl" name="Crypto-lvl" onclick="CryptoSelect();">
+          <option> Lvls </option>
+          <option value="900"> 1 </option>
           <option value ="959"> 2 </option>
           <option value ="1021"> 3 </option>
           <option value ="1084"> 4 </option>
@@ -118,12 +176,13 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptoPoints" id="CryptoPoints"></td>
+           <td><input type="text" name="CryptoPoints" id="CryptoPoints" value="Points"></td>
         </tr>
         <tr>
         <td>2048 Coins</td>
-        <td><select size="1" id="2048-lvl" name="2048-lvl">
-          <option value="800" selected="selected"> 1 </option>
+        <td><select size="1" id="2048-lvl" name="2048-lvl" onclick="2048Select();">
+          <option> Lvls </option>
+          <option value="800"> 1 </option>
           <option value ="850"> 2 </option>
           <option value ="900"> 3 </option>
           <option value ="950"> 4 </option>
@@ -134,12 +193,13 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="2048Points" id="2048Points"></td>
+           <td><input type="text" name="2048Points" id="2048Points" value="Points"></td>
         </tr>
         <tr>
         <td>Coin-Flip</td>
-        <td><select size="1" id="Flip-lvl" name="Flip-lvl">
-          <option value="900" selected="selected"> 1 </option>
+        <td><select size="1" id="Flip-lvl" name="Flip-lvl" onclick="FlipSelect();">
+          <option> Lvls </option>
+          <option value="900"> 1 </option>
           <option value ="912"> 2 </option>
           <option value ="912"> 3 </option>
           <option value ="1232"> 4 </option>
@@ -150,12 +210,13 @@
           <option value ="1580"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlipPoints" id="FlipPoints"></td>
+           <td><input type="text" name="FlipPoints" id="FlipPoints" value="Points"></td>
         </tr>
         <tr>
         <td>Dr. Hamster</td>
-        <td><select size="1" id="Dr-lvl" name="Dr-lvl">
-          <option value="896" selected="selected"> 1 </option>
+        <td><select size="1" id="Dr-lvl" name="Dr-lvl" onclick="DrSelect();">
+          <option> Lvls </option>
+          <option value="896"> 1 </option>
           <option value ="981"> 2 </option>
           <option value ="1059"> 3 </option>
           <option value ="1132"> 4 </option>
@@ -166,12 +227,13 @@
           <option value ="1404"> 9 </option>
           <option value ="1440"> 10 </option>
           </select></td>
-           <td><input type="text" name="DrPoints" id="DrPoints"></td>
+           <td><input type="text" name="DrPoints" id="DrPoints" value="Points"></td>
         </tr>
         <tr>
         <td>Token Surfer</td>
-        <td><select size="1" id="Surfer-lvl" name="Surfer-lvl">
-          <option value="840" selected="selected"> 1 </option>
+        <td><select size="1" id="Surfer-lvl" name="Surfer-lvl" onclick="SurferSelect();">
+          <option> Lvls </option>
+          <option value="840"> 1 </option>
           <option value ="Unknown"> 2 </option>
           <option value ="Unknown"> 3 </option>
           <option value ="Unknown"> 4 </option>
@@ -182,7 +244,7 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="SurferPoints" id="SurferPoints"></td>
+           <td><input type="text" name="SurferPoints" id="SurferPoints" value="Points"></td>
         </tr>
       </tbody>
     </table>
