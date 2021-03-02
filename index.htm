@@ -64,6 +64,17 @@
        document.getElementById("SurferPoints").value=
        document.getElementById("Surfer-lvl").value;
       }
+      
+      
+      
+      
+      
+      
+      function TripleCoin()
+      { 
+       document.getElementById("TripleCoin").value=
+       document.getElementById("Coinclick-lvl").data-three;
+      }
     </script>
   </head>
   <body>
@@ -78,10 +89,10 @@
       <tbody>
         <tr>
         <td>Coinclick</td>
-        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();">
+        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();TripleCoin();">
           <option value ="Points"> Lvls </option>
-          <option value ="600"> 1 </option>
-          <option value ="640"> 2 </option>
+          <option value ="600" data-three="1800"> 1 </option>
+          <option value ="640" data-three="1920"> 2 </option>
           <option value ="680"> 3 </option>
           <option value ="700"> 4 </option>
           <option value ="720"> 5 </option>
@@ -92,6 +103,7 @@
           <option value ="880"> 10 </option>
           </select></td>
           <td><input type="text" name="CoinPoints" id="CoinPoints" value="Points"></td>
+          <td><input type="text" name="TripleCoin" id="TripleCoin" value="3 Wins"></td>
         </tr>
       <tr>
         <td>Token Blaster</td>
