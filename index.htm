@@ -73,6 +73,7 @@
       function TripleCoin()
       { 
        document.getElementById("TripleCoin").value = 3*document.getElementById("Coinclick-lvl").value
+        if (isNaN(document.getElementById("TripleCoin").value)) document.getElementById("TripleCoin").value = 0; 
       }
     </script>
   </head>
@@ -81,7 +82,7 @@
       <thead>
       <tr>
         <th> </th>
-        <th align="left">Select Current Lvl</th>
+        <th align="left">Select Lvl</th>
         <th align="left">Points Per Win</th>
         <th align="left">Lvl Conquered</th>
       </tr>
