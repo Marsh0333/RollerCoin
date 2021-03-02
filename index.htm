@@ -5,6 +5,8 @@
     
     
     <script>
+      
+      //Points Per Win Functions
         function CoinSelect()
       { 
        document.getElementById("CoinPoints").value=
@@ -68,12 +70,66 @@
       
       
       
-      
+      //Lvl Conquered Functions
       
       function TripleCoin()
       { 
        document.getElementById("TripleCoin").value = 3*document.getElementById("Coinclick-lvl").value
         if (isNaN(document.getElementById("TripleCoin").value)) document.getElementById("TripleCoin").value = 0; 
+      }
+      
+      function TripleBlaster()
+      { 
+       document.getElementById("TripleBlaster").value = 3*document.getElementById("Blaster-lvl").value
+        if (isNaN(document.getElementById("TripleBlaster").value)) document.getElementById("TripleBlaster").value = 0; 
+      }
+      
+      function TripleFlappy()
+      { 
+       document.getElementById("TripleFlappy").value = 3*document.getElementById("Flappy-lvl").value
+        if (isNaN(document.getElementById("TripleFlappy").value)) document.getElementById("TripleFlappy").value = 0; 
+      }
+      
+      function TripleCryptonoid()
+      { 
+       document.getElementById("TripleCryptonoid").value = 3*document.getElementById("Cryptonoid-lvl").value
+        if (isNaN(document.getElementById("TripleCryptonoid").value)) document.getElementById("TripleCryptonoid").value = 0; 
+      }
+      
+      function TripleMatch()
+      { 
+       document.getElementById("TripleMatch").value = 3*document.getElementById("Match-lvl").value
+        if (isNaN(document.getElementById("TripleMatch").value)) document.getElementById("TripleMatch").value = 0; 
+      }
+      
+      function TripleCrypto()
+      { 
+       document.getElementById("TripleCrypto").value = 3*document.getElementById("Crypto-lvl").value
+        if (isNaN(document.getElementById("TripleCrypto").value)) document.getElementById("TripleCrypto").value = 0; 
+      }
+      
+      function TripleTwentyFourtyEighty()
+      { 
+       document.getElementById("TripleTwentyFourtyEighty").value = 3*document.getElementById("TwentyFourtyEighty-lvl").value
+        if (isNaN(document.getElementById("TripleTwentyFourtyEighty").value)) document.getElementById("TripleTwentyFourtyEighty").value = 0; 
+      }
+      
+      function TripleFlip()
+      { 
+       document.getElementById("TripleFlip").value = 3*document.getElementById("Flip-lvl").value
+        if (isNaN(document.getElementById("TripleFlip").value)) document.getElementById("TripleFlip").value = 0; 
+      }
+      
+      function TripleDr()
+      { 
+       document.getElementById("TripleDr").value = 3*document.getElementById("Dr-lvl").value
+        if (isNaN(document.getElementById("TripleDr").value)) document.getElementById("TripleDr").value = 0; 
+      }
+      
+      function TripleSurfer()
+      { 
+       document.getElementById("TripleSurfer").value = 3*document.getElementById("Surfer-lvl").value
+        if (isNaN(document.getElementById("TripleSurfer").value)) document.getElementById("TripleSurfer").value = 0; 
       }
     </script>
   </head>
@@ -108,7 +164,7 @@
         </tr>
       <tr>
         <td>Token Blaster</td>
-        <td><select size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();">
+        <td><select size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();TripleBlaster();">
           <option value ="0"> Lvls </option>
           <option value="700"> 1 </option>
           <option value ="756"> 2 </option>
@@ -122,10 +178,11 @@
           <option value ="2400"> 10 </option>
           </select></td>
          <td><input type="text" name="BlasterPoints" id="BlasterPoints" value="0"></td>
+         <td><input type="text" name="TripleBlaster" id="TripleBlaster" value="0"></td>
         </tr>
         <tr>
           <td>Flappy Rocket</td>
-          <td><select size="1" id="Flappy-lvl" name="Flappy-lvl" onclick="FlappySelect();">
+          <td><select size="1" id="Flappy-lvl" name="Flappy-lvl" onclick="FlappySelect();TripleFlappy();">
           <option value ="Points"> Lvls </option>
           <option value="704"> 1 </option>
           <option value ="768"> 2 </option>
@@ -138,11 +195,12 @@
           <option value ="1140"> 9 </option>
           <option value ="1200"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlappyPoints" id="FlappyPoints" value="Points"></td>
+           <td><input type="text" name="FlappyPoints" id="FlappyPoints" value=0"></td>
+           <td><input type="text" name="TripleFlappy" id="TripleFlappy" value="0"></td>
         </tr>
         <tr>
         <td>Cryptonoid</td>
-        <td><select size="1" id="Cryptonoid-lvl" name="Cryptonoid-lvl" onclick="CryptonoidSelect();">
+        <td><select size="1" id="Cryptonoid-lvl" name="Cryptonoid-lvl" onclick="CryptonoidSelect();TripleCryptonoid();">
           <option value ="Points"> Lvls </option>
           <option value="912"> 1 </option>
           <option value ="936"> 2 </option>
@@ -155,11 +213,12 @@
           <option value ="1568"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints" value="Points"></td>
+           <td><input type="text" name="CryptonoidPoints" id="CryptonoidPoints" value="0"></td>
+           <td><input type="text" name="TripleCryptonoid" id="TripleCryptonoid" value="0"></td>  
         </tr>
         <tr>
         <td>Coin-Match</td>
-        <td><select size="1" id="Match-lvl" name="Match-lvl" onclick="MatchSelect();">
+        <td><select size="1" id="Match-lvl" name="Match-lvl" onclick="MatchSelect();TripleMatch();">
           <option value ="Points"> Lvls </option>
           <option value="720"> 1 </option>
           <option value ="793"> 2 </option>
@@ -172,11 +231,12 @@
           <option value ="1020"> 9 </option>
           <option value ="1035"> 10 </option>
           </select></td>
-           <td><input type="text" name="MatchPoints" id="MatchPoints" value="Points"></td>
+           <td><input type="text" name="MatchPoints" id="MatchPoints" value="0"></td>
+           <td><input type="text" name="TripleMatch" id="TripleMatch" value="0"></td>  
         </tr>
         <tr>
         <td>Crypto Hamster</td>
-        <td><select size="1" id="Crypto-lvl" name="Crypto-lvl" onclick="CryptoSelect();">
+        <td><select size="1" id="Crypto-lvl" name="Crypto-lvl" onclick="CryptoSelect();TripleCrypto();">
           <option value ="Points"> Lvls </option>
           <option value="900"> 1 </option>
           <option value ="959"> 2 </option>
@@ -189,11 +249,12 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="CryptoPoints" id="CryptoPoints" value="Points"></td>
+           <td><input type="text" name="CryptoPoints" id="CryptoPoints" value="0"></td>
+           <td><input type="text" name="TripleCrypto" id="TripleCrypto" value="0"></td>  
         </tr>
         <tr>
         <td>2048 Coins</td>
-        <td><select size="1" id="TwentyFourtyEight-lvl" name="TwentyFourtyEight-lvl" onclick="TwentyFourtyEightSelect();">
+        <td><select size="1" id="TwentyFourtyEight-lvl" name="TwentyFourtyEight-lvl" onclick="TwentyFourtyEightSelect();TripleTwentyFourtyEight();">
           <option value ="Points"> Lvls </option>
           <option value="800"> 1 </option>
           <option value ="850"> 2 </option>
@@ -206,11 +267,12 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="TwentyFourtyEightPoints" id="TwentyFourtyEightPoints" value="Points"></td>
+           <td><input type="text" name="TwentyFourtyEightPoints" id="TwentyFourtyEightPoints" value="0"></td>
+           <td><input type="text" name="TripleTwentyFourtyEight" id="TripleTwentyFourtyEight" value="0"></td>  
         </tr>
         <tr>
         <td>Coin-Flip</td>
-        <td><select size="1" id="Flip-lvl" name="Flip-lvl" onclick="FlipSelect();">
+        <td><select size="1" id="Flip-lvl" name="Flip-lvl" onclick="FlipSelect();TripleFlip();">
           <option value ="Points"> Lvls </option>
           <option value="900"> 1 </option>
           <option value ="912"> 2 </option>
@@ -223,11 +285,12 @@
           <option value ="1580"> 9 </option>
           <option value ="1600"> 10 </option>
           </select></td>
-           <td><input type="text" name="FlipPoints" id="FlipPoints" value="Points"></td>
+           <td><input type="text" name="FlipPoints" id="FlipPoints" value="0"></td>
+           <td><input type="text" name="TripleFlip" id="TripleFlip" value="0"></td>  
         </tr>
         <tr>
         <td>Dr. Hamster</td>
-        <td><select size="1" id="Dr-lvl" name="Dr-lvl" onclick="DrSelect();">
+        <td><select size="1" id="Dr-lvl" name="Dr-lvl" onclick="DrSelect();TripleDr();">
           <option value ="Points"> Lvls </option>
           <option value="896"> 1 </option>
           <option value ="981"> 2 </option>
@@ -240,11 +303,12 @@
           <option value ="1404"> 9 </option>
           <option value ="1440"> 10 </option>
           </select></td>
-           <td><input type="text" name="DrPoints" id="DrPoints" value="Points"></td>
+           <td><input type="text" name="DrPoints" id="DrPoints" value="0"></td>
+           <td><input type="text" name="TripleDr" id="TripleDr" value="0"></td>  
         </tr>
         <tr>
         <td>Token Surfer</td>
-        <td><select size="1" id="Surfer-lvl" name="Surfer-lvl" onclick="SurferSelect();">
+        <td><select size="1" id="Surfer-lvl" name="Surfer-lvl" onclick="SurferSelect();TripleSurfer();">
           <option value ="Points"> Lvls </option>
           <option value="840"> 1 </option>
           <option value ="910"> 2 </option>
@@ -257,7 +321,8 @@
           <option value ="Unknown"> 9 </option>
           <option value ="Unknown"> 10 </option>
           </select></td>
-           <td><input type="text" name="SurferPoints" id="SurferPoints" value="Points"></td>
+           <td><input type="text" name="SurferPoints" id="SurferPoints" value="0"></td>
+           <td><input type="text" name="TripleSurfer" id="TripleSurfer" value="0"></td>  
         </tr>
       </tbody>
     </table>
