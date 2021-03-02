@@ -83,6 +83,7 @@
         <th> </th>
         <th align="left">Select Current Lvl</th>
         <th align="left">Points Per Win</th>
+        <th align="left">Lvl Conquered</th>
       </tr>
       </thead>
       <tbody>
@@ -101,13 +102,13 @@
           <option value ="840"> 9 </option>
           <option value ="880"> 10 </option>
           </select></td>
-          <td><input type="text" name="CoinPoints" id="CoinPoints" value="Points"></td>
+          <td><input type="text" name="CoinPoints" id="CoinPoints" value=""></td>
           <td><input type="text" name="TripleCoin" id="TripleCoin" value="3 Wins"></td>
         </tr>
       <tr>
         <td>Token Blaster</td>
         <td><select size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();">
-          <option value ="Points"> Lvls </option>
+          <option value =""> Lvls </option>
           <option value="700"> 1 </option>
           <option value ="756"> 2 </option>
           <option value ="812"> 3 </option>
@@ -245,7 +246,7 @@
         <td><select size="1" id="Surfer-lvl" name="Surfer-lvl" onclick="SurferSelect();">
           <option value ="Points"> Lvls </option>
           <option value="840"> 1 </option>
-          <option value ="Unknown"> 2 </option>
+          <option value ="910"> 2 </option>
           <option value ="Unknown"> 3 </option>
           <option value ="Unknown"> 4 </option>
           <option value ="Unknown"> 5 </option>
