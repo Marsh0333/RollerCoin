@@ -6,14 +6,10 @@
     
     <script>
         function CoinSelect()
-      {
-         var selectedValue = document.getElementById("Coinclick-lvl").value;
-         console.log(selectedValue);
-       /* var d=document.getElementById("Coinclick-lvl");
-        var displaytext = d.options[d.SelectedIndex].value;
-        document.getElementById("CoinPoints").value=displaytext; */
-        }
-       
+      { 
+       document.getElementById("CoinPoints").value=
+       document.getElementById("Coinclick-lvl");
+      }
 
     </script>
   </head>
@@ -29,7 +25,7 @@
       <tbody>
         <tr>
         <td>Coinclick</td>
-        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onchange="CoinSelect();">
+        <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();">
           <option value="600" selected="selected"> 1 </option>
           <option value ="640"> 2 </option>
           <option value ="680"> 3 </option>
@@ -41,7 +37,7 @@
           <option value ="840"> 9 </option>
           <option value ="880"> 10 </option>
           </select></td>
-          <td><input type="text" name="CoinPoints" id="CoinPoints" onclick="CoinSelect();"></td>
+          <td><input type="text" name="CoinPoints" id="CoinPoints"></td>
         </tr>
       <tr>
         <td>Token Blaster</td>
