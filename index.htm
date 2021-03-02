@@ -72,8 +72,7 @@
       
       function TripleCoin()
       { 
-       document.getElementById("TripleCoin").value=
-       document.getElementById("Coinclick-lvl").data-three;
+       document.getElementById("TripleCoin").value = 3*document.getElementById("Coinclick-lvl").value
       }
     </script>
   </head>
@@ -91,8 +90,8 @@
         <td>Coinclick</td>
         <td><select size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();TripleCoin();">
           <option value ="Points"> Lvls </option>
-          <option value ="600" data-three="1800"> 1 </option>
-          <option value ="640" data-three="1920"> 2 </option>
+          <option value ="600"> 1 </option>
+          <option value ="640"> 2 </option>
           <option value ="680"> 3 </option>
           <option value ="700"> 4 </option>
           <option value ="720"> 5 </option>
