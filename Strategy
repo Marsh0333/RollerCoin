@@ -1,0 +1,77 @@
+---
+layout: default
+
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Strategy</title>
+    
+    <style type="text/css">
+    
+    
+      /* Brightness-zoom Container */
+      .brightness-img img {
+      transition-duration: 1s;
+      transform-origin: center center;
+      filter: brightness(100%);
+      }
+ 
+      /* The Transformation */
+      .brightness-img:hover img {
+      filter: brightness(110%);
+      transform: scale(1.5);
+      }
+      
+      .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      }
+
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      }
+    </style>
+    
+    </head>
+  <body>
+    <a href="https://marsh0333.github.io/RollerCoin"><button class="button">Home</button></a>
+    <a href="https://marsh0333.github.io/RollerCoin/Comparisons"><button class="button">Comparisons</button></a>
+    <br>
+    <br>
+
+  
+    
+    <h2 style="color:DarkGreen">What do you have time for?</h2>
+    <div class="brightness-img">
+    <img src="https://user-images.githubusercontent.com/79811052/110210743-5b596200-7e50-11eb-8f38-0ccdb70bafc1.png">
+    </div>
+    <a href="https://user-images.githubusercontent.com/79811052/110210743-5b596200-7e50-11eb-8f38-0ccdb70bafc1.png">Game Play</a>
+    <br>
+    
+  </body>
+  
+  
+    
+     
+    
+
+  
+  </html>
+
+
